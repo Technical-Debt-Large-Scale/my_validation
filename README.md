@@ -1,6 +1,6 @@
 # Analysing Issues with Architectural Impact
 
-Analysis of [commits and issues](https://github.com/armandossrecife/my_validation3/blob/main/imagens/analysis_commits_issues.jpg) from Git Repositories using Critical Classes from [ATDCodeAnalyzer](https://github.com/Technical-Debt-Large-Scale/atdcodeanalyzer/blob/main/docs/diagrams/AnalysisCassandraRepositoryFlow.png).
+Analysis of [commits and issues](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/analysis_commits_issues.jpg) from Git Repositories using Critical Classes from [ATDCodeAnalyzer](https://github.com/Technical-Debt-Large-Scale/atdcodeanalyzer/blob/main/docs/diagrams/AnalysisCassandraRepositoryFlow.png).
 
 We have been analysed four Git Repositories: Apache Cassandra, Apache ActiveMQ, Apache Kafka and Apache Hadoop. We evaluated 678 issues from Cassandra (226), ActiveMQ (132), Kafka (179) and Hadoop (141) using an inspection aided by the LLM model to classify them as either Yes or No based on their architectural impact.
 
@@ -45,7 +45,7 @@ norm.ppf(): normal continuous random variable
 You manually review and classify the selected 226 issues to assess their architectural impact. This could involve identifying whether the issue relates to architectural changes, refactoring, or other factors.
 
 8. Semi-automatic classification aided by ChatGPT with Prompt Engineering:
-In this step, you use ChatGPT to assist in the classification process. You might provide prompts to ChatGPT to help automate or semi-automate some of the classification tasks. More details in https://github.com/armandossrecife/my_validation3/blob/main/inspection_process.md
+In this step, you use ChatGPT to assist in the classification process. You might provide prompts to ChatGPT to help automate or semi-automate some of the classification tasks. More details in https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/inspection_process.md
 
 9. Degree of Agreement Calculation comparing 6 and 7:
 This step involves calculating the degree of agreement between the manual classification and the semi-automatic classification performed with the help of ChatGPT. You need to quantify how closely the two methods align.
@@ -59,44 +59,44 @@ In our evaluation of the model used for inspecting issues, we obtained the follo
 
 This semi-automatic inspection process (aided by ChatGPT) can help to inspect other issues from other apache projects. 
 
-More details and scripts available in https://github.com/armandossrecife/my_validation3/blob/main/my_analysis_cassandra.ipynb
+More details and scripts available in https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_analysis_cassandra.ipynb
 
 ## Apache ActiveMQ analaysis
 
 ActiveMQ analysis
 
-![My analysis of commits and issues from ActiveMQ](https://github.com/armandossrecife/my_validation3/blob/main/imagens/my_method_analysis_commits_issues_activemq.jpg)
+![My analysis of commits and issues from ActiveMQ](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/my_method_analysis_commits_issues_activemq.jpg)
 
-More details and scripts available in https://github.com/armandossrecife/my_validation3/blob/main/my_analysis_activemq.ipynb
+More details and scripts available in https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_analysis_activemq.ipynb
 
 ## Apache Kafka analysis
 
 Kafka analysis
 
-![My analysis of commits and issues from Kafka](https://github.com/armandossrecife/my_validation3/blob/main/imagens/my_method_analysis_commits_issues_kafka.jpg)
+![My analysis of commits and issues from Kafka](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/my_method_analysis_commits_issues_kafka.jpg)
 
-More details and scripts available in https://github.com/armandossrecife/my_validation3/blob/main/my_analysis_kafka.ipynb
+More details and scripts available in https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_analysis_kafka.ipynb
 
 ## Apache Hadoop analysis
 
 Hadoop analysis
 
-![My analysis of commits and issues from Hadoop](https://github.com/armandossrecife/my_validation3/blob/main/imagens/my_method_analysis_commits_issues_hadoop.jpg)
+![My analysis of commits and issues from Hadoop](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/my_method_analysis_commits_issues_hadoop.jpg)
 
-More details and scripts available in https://github.com/armandossrecife/my_validation3/blob/main/my_analysis_hadoop.ipynb
+More details and scripts available in https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_analysis_hadoop.ipynb
 
 # Comparing Results
 
 The comparison of issues in commits with critical classes among Cassandra, ActiveMQ, Kafka and Hadoop
 
-![Boxplot Lines - LOC - changes in Commits in issues with AI](https://github.com/armandossrecife/my_validation3/blob/main/imagens/boxplot_lines_chagnes_in_commits_issues_with_ai.png)
-![lines_changes_in_commits_issues](https://github.com/armandossrecife/my_validation3/blob/main/imagens/lines_changes_in_commits_issues.png)
-![Boxplot Files chagnes in Commits in issues with AI](https://github.com/armandossrecife/my_validation3/blob/main/imagens/boxplot_files_chages_in_commits_issues_with_ai.png)
-![modified_files_in_commits_issues](https://github.com/armandossrecife/my_validation3/blob/main/imagens/modified_files_in_commits_issues.png)
-![Boxplot Issues Time Resolution](https://github.com/armandossrecife/my_validation3/blob/main/imagens/boxplot_timeresolution_issues.png)
-![time_resolution_in_commits_issues](https://github.com/armandossrecife/my_validation3/blob/main/imagens/time_resolution_in_commits_issues.png)
+![Boxplot Lines - LOC - changes in Commits in issues with AI](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_lines_chagnes_in_commits_issues_with_ai.png)
+![lines_changes_in_commits_issues](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/lines_changes_in_commits_issues.png)
+![Boxplot Files chagnes in Commits in issues with AI](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_files_chages_in_commits_issues_with_ai.png)
+![modified_files_in_commits_issues](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/modified_files_in_commits_issues.png)
+![Boxplot Issues Time Resolution](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_timeresolution_issues.png)
+![time_resolution_in_commits_issues](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/time_resolution_in_commits_issues.png)
 
-[Hypothesis Tests](https://github.com/armandossrecife/my_validation3/blob/main/my_hypothesis_tests.md)
+[Hypothesis Tests](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_hypothesis_tests.md)
 
 **Conclusions**
 Issues with architectural impact (labeled as "Yes") exhibit the following **characteristics**:
@@ -120,4 +120,4 @@ Furthermore, the inspection of issues that appear in commits containing critical
 
 More details in 
 
-https://github.com/armandossrecife/my_validation3/blob/main/my_comparison.ipynb
+https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_comparison.ipynb
