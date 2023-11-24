@@ -70,3 +70,7 @@ Description of set Issues, Commits, Critical Classes and SATD
 | z2 | Issues - Commits - Critical Classes - No SATD |
 | w1 | Issues - Commits - No Critical Classes - SATD |
 | w2 | Issues - Commits - No Critical Classes - No SATD |
+
+# Map related to commits, issues, critical classes and SATD
+
+![Commits, issues, critical classes and SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/Commits_Issues_Critical_Classes_SATD.png)
