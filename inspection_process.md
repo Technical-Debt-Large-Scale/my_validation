@@ -10,13 +10,13 @@ In **Stage 1** (Introduction), we focused on gaining a deep understanding of the
 
 In **Stage 2** (Example Showcase), we presented several sample issues, provided instructions and examples for identifying 'Architectural Impact,' and introduced the 'Architectural Impact Classifier' and 'Issues with Architectural Technical Debt.' We also offered numerous examples of issues with ATD and issues without ATD.
 
-**Stage 3** (Data Preparation) involved the selection of 163 issues for manual inspection to identify architectural issues and technical debt. These issues were chosen based on their association with commits containing critical classes identified by the ATDCodeAnalyzer and featuring SATD keywords in the commit messages and comments of the commit diffs.
+**Stage 3** (Data Preparation) involved the selection of 226 issues for manual inspection to identify architectural issues and technical debt. These issues were chosen based on their association with commits containing critical classes identified by the ATDCodeAnalyzer and featuring SATD keywords in the commit messages and comments of the commit diffs.
 
 **Stage 4** (Final instruction to start the inspection by ChatGPT)
 
 Following the identification of critical issues, each one underwent a thorough inspection. We analyzed the content within the 'summary,' 'description,' and 'comments' fields to detect the presence of SATD keywords. Issues containing these keywords in these fields then underwent a secondary inspection to evaluate their impact on the software's architecture.
 
-This inspection process unfolded in two distinct phases. In the first phase (Manual Inspection), we manually inspected a sample of 163 critical issues. Each issue was labeled 'yes' or 'no' to signify whether it had an impact on the software's architecture. Subsequently, in the second phase (ChatGPT Inspection), the same 163 selected critical issues underwent automatic inspection with the assistance of ChatGPT, generating similar 'yes' or 'no' results concerning their architectural impact.
+This inspection process unfolded in two distinct phases. In the first phase (Manual Inspection), we manually inspected a sample of 226 critical issues. Each issue was labeled 'yes' or 'no' to signify whether it had an impact on the software's architecture. Subsequently, in the second phase (ChatGPT Inspection), the same 226 selected critical issues underwent automatic inspection with the assistance of ChatGPT, generating similar 'yes' or 'no' results concerning their architectural impact.
 
 At the conclusion of this process (Manual Review), we calculated the Cohen's Kappa coefficient to measure the agreement between the results obtained in the first and second phases. This assessment helped determine the consistency between manual and automatic inspections, thereby contributing to a precise analysis of the relationship between critical issues and their effect on the software's architecture
 
@@ -24,7 +24,7 @@ Is this step we use the following stages to use the ChatGTP:
 
 # Setup ChatGPT to aid issue inspection (Stage1, Stage2, Stage3 and Stage 4)
 
-The stage 3 is just the manual seleciont of the 163 files to be passed after stage 4 is ready to start the inspection process. 
+The stage 3 is just the manual seleciont of the 226 files to be passed after stage 4 is ready to start the inspection process. 
 
 All the 16 prompts (S1P1..S1P4, S2P1..S2P11 and S4P1) must be executed in this sequence to model be effectively. 
 
@@ -578,7 +578,7 @@ I think we should run the repeated tests before merging, so we make sure we don'
 
 I have started part of the repeated runs [here|https://app.circleci.com/pipelines/github/adelapena/cassandra?branch=18062-trunk-test]. Each push on that branch is for running a subset of the new or modified tests.
 
-So far it has hit test failures on [{{StorageAttachedIndexDDLTest.concurrentTruncateWithIndexBuilding}}|https://app.circleci.com/pipelines/github/adelapena/cassandra/2835/workflows/8301fcae-ab73-401d-ae26-d3e7e8b0f237/jobs/38519/tests] and [{{CompactionTest.testConcurrentIndexDropWithCompaction}}|https://app.circleci.com/pipelines/github/adelapena/cassandra/2828/workflows/c22d9dc8-9af1-493f-9e13-e91631fd2386/jobs/38538/tests]. I'll keep running the rest of the tests to see if there are more flakies.
+So far it has hit test failures on [{{StorageAttachedIndexDDLTest.concurrentTruncateWithIndexBuilding}}|https://app.circleci.com/pipelines/github/adelapena/cassandra/2835/workflows/8301fcae-ab73-401d-ae26-d3e7e8b0f237/jobs/38519/tests] and [{{CompactionTest.testConcurrentIndexDropWithCompaction}}|https://app.circleci.com/pipelines/github/adelapena/cassandra/2828/workflows/c22d9dc8-9af1-493f-9e13-e92261fd2386/jobs/38538/tests]. I'll keep running the rest of the tests to see if there are more flakies.
 Even if we do have a couple flakes, they're only merging to the 16052 umbrella branch, where I'd be running the repeats again after the next trunk rebase. If they're trivial to resolve now before merge though, that's fine too.
 These are the new flaky tests once all the CI runs have finished:
  * [o.a.c.distributed.test.sai.IndexAvailabilityTest#verifyIndexStatusPropagation|https://app.circleci.com/pipelines/github/adelapena/cassandra/2826/workflows/e63df64f-9821-4bae-add4-7b3169c50344/jobs/38621/tests]
@@ -751,7 +751,7 @@ I think we should run the repeated tests before merging, so we make sure we don'
 
 I have started part of the repeated runs [here|https://app.circleci.com/pipelines/github/adelapena/cassandra?branch=18062-trunk-test]. Each push on that branch is for running a subset of the new or modified tests.
 
-So far it has hit test failures on [{{StorageAttachedIndexDDLTest.concurrentTruncateWithIndexBuilding}}|https://app.circleci.com/pipelines/github/adelapena/cassandra/2835/workflows/8301fcae-ab73-401d-ae26-d3e7e8b0f237/jobs/38519/tests] and [{{CompactionTest.testConcurrentIndexDropWithCompaction}}|https://app.circleci.com/pipelines/github/adelapena/cassandra/2828/workflows/c22d9dc8-9af1-493f-9e13-e91631fd2386/jobs/38538/tests]. I'll keep running the rest of the tests to see if there are more flakies.
+So far it has hit test failures on [{{StorageAttachedIndexDDLTest.concurrentTruncateWithIndexBuilding}}|https://app.circleci.com/pipelines/github/adelapena/cassandra/2835/workflows/8301fcae-ab73-401d-ae26-d3e7e8b0f237/jobs/38519/tests] and [{{CompactionTest.testConcurrentIndexDropWithCompaction}}|https://app.circleci.com/pipelines/github/adelapena/cassandra/2828/workflows/c22d9dc8-9af1-493f-9e13-e92261fd2386/jobs/38538/tests]. I'll keep running the rest of the tests to see if there are more flakies.
 Even if we do have a couple flakes, they're only merging to the 16052 umbrella branch, where I'd be running the repeats again after the next trunk rebase. If they're trivial to resolve now before merge though, that's fine too.
 These are the new flaky tests once all the CI runs have finished:
  * [o.a.c.distributed.test.sai.IndexAvailabilityTest#verifyIndexStatusPropagation|https://app.circleci.com/pipelines/github/adelapena/cassandra/2826/workflows/e63df64f-9821-4bae-add4-7b3169c50344/jobs/38621/tests]
@@ -1074,16 +1074,16 @@ After setup the "model" with prompts aforementioned, you can pass the content of
 
 ## Data Preparation:
 
-We generated individual .txt files for each of the 163 issues for inspection. Each file should contain detailed issue information, including issue ID, type, status, summary, description, and comments.
+We generated individual .txt files for each of the 226 issues for inspection. Each file should contain detailed issue information, including issue ID, type, status, summary, description, and comments.
 
 ## Manual Inspection
 
-The 163 issues are selected for manual inspection. We saved the results of these manual inspections in 163 separate .txt files to be evaluated in other stage.
+The 226 issues are selected for manual inspection. We saved the results of these manual inspections in 226 separate .txt files to be evaluated in other stage.
 
 ## ChatGTP Inspection
 
-We utilized ChatGPT to inspect each of the 163 .txt files representing issues. The primary goal is to identify potential architectural impacts, architectural issues, and/or technical debt within the analyzed issues. Also we requested justification for each inspection. Finally, we saved the results of these ChatGPT inspections in 163 separate .txt files to be evaluated in other stage.
+We utilized ChatGPT to inspect each of the 226 .txt files representing issues. The primary goal is to identify potential architectural impacts, architectural issues, and/or technical debt within the analyzed issues. Also we requested justification for each inspection. Finally, we saved the results of these ChatGPT inspections in 226 separate .txt files to be evaluated in other stage.
 
 ## Manual Review:
 
-Finally, in the last stage we conducted a manual review of all 163 sets of inspection results (.txt files) both manual inspection and inspection by ChatGPT. Cohen's Kappa coefficient is calculated to compare the agreement between the results obtained in the manual inspection and inspection by ChatGPT. This helps assess the consistency between manual and automatic inspections, contributing to a precise analysis of the relationship between critical issues and their impact on the software's architecture.
+Finally, in the last stage we conducted a manual review of all 226 sets of inspection results (.txt files) both manual inspection and inspection by ChatGPT. Cohen's Kappa coefficient is calculated to compare the agreement between the results obtained in the manual inspection and inspection by ChatGPT. This helps assess the consistency between manual and automatic inspections, contributing to a precise analysis of the relationship between critical issues and their impact on the software's architecture.
