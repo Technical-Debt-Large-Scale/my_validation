@@ -103,7 +103,7 @@ Hadoop analysis
 
 More details and scripts available in https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_analysis_hadoop.ipynb
 
-# Comparing Results
+# Results
 
 The comparison of issues in commits with critical classes among Cassandra, ActiveMQ, Kafka and Hadoop
 
