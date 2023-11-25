@@ -17,6 +17,8 @@ Comparing Commits, Isues, Critical Classes and SATD
 
 ![Comparing Boxplots of Cassandra](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxsplots_satd_cassandra.png)
 
+More details in https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_analysis_cassandra.ipynb
+
 ## Boxplots of Apache Kafka
 
 Comparing Commits, Isues, Critical Classes and SATD
