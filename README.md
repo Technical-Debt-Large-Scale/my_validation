@@ -138,10 +138,14 @@ The comparison of issues in commits with critical classes among Cassandra, Activ
 
 ## Conclusions 
 
-Issues with architectural impact (labeled as "Yes") exhibit the following **characteristics**:
-- They affect a substantial number of files (T1:H0A rejected).
-- They involve significant code changes (T2:H0B rejected).
-- They require more time for resolution (T3:H0C rejected).
+Issues with architectural impact (labeled as "Yes") in commits with critical classes exhibit the following **characteristics**:
+- They affect a substantial number of files in commits (T1:H1A accepted).
+- They involve significant code changes in commits (T2:H1B accepted).
+- They require more time for resolution (T3:H1C accepted).
+
+Commits with SATD and issues with architectural impact (labeled as "Yes") also have the following **characteristics**:  
+- They affect a substantial number of files in commits (T4:H1D accepted).
+- They involve significant code changes in commits (T5:H1E accepted).
 
 **Justification**
 These conclusions are drawn from a comparative analysis of results from the Cassandra, ActiveMQ, and Kafka repositories, specifically:
