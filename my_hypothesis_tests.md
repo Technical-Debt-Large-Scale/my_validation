@@ -29,7 +29,11 @@ Consider alpha=0.05
 
 If the *p-value* is less than your chosen significance level, then you reject the null hypothesis and conclude that the evidence supports the alternative hypothesis.
 
-# T1: HA - issues with architectural impact affect a substantial number of LOC changes in commits.
+# Results of Hypothesis Tests
+
+## RQ1) 
+
+### T1: HA - issues with architectural impact affect a substantial number of LOC changes in commits.
 
 To test the hypothesis that issues with architectural impact affect a substantial number of LOC changes in commits:
 
@@ -56,7 +60,9 @@ To test the hypothesis that issues with architectural impact affect a substantia
 ![lines_changes_in_commits_issues](https://github.com/armandossrecife/my_validation3/blob/main/imagens/lines_changes_in_commits_issues.png)
 
 
-# T2: HB - issues with architectural impact affect a substantial number of files
+## RQ2) 
+
+### T2: HB - issues with architectural impact affect a substantial number of files
 
 To test the hypothesis that issues with architectural impact affect a substantial number of files:
 
@@ -83,7 +89,9 @@ To test the hypothesis that issues with architectural impact affect a substantia
 ![modified_files_in_commits_issues](https://github.com/armandossrecife/my_validation3/blob/main/imagens/modified_files_in_commits_issues.png)
 
 
-# T3: HC - issues with architectural impact require more time for resolution
+## RQ3) 
+
+### T3: HC - issues with architectural impact require more time for resolution
 To test the hypothesis that issues with architectural impact require more time for resolution:
 
 **Null hypothesis (H0C)**: The time to resolution for issues with architectural impact is not significantly different from the time to resolution for issues with less architectural impact.
@@ -107,6 +115,34 @@ To test the hypothesis that issues with architectural impact require more time f
 ![Boxplot Issues Time Resolution](https://github.com/armandossrecife/my_validation3/blob/main/imagens/boxplot_timeresolution_issues.png)
 
 ![time_resolution_in_commits_issues](https://github.com/armandossrecife/my_validation3/blob/main/imagens/time_resolution_in_commits_issues.png)
+
+## RQ4
+
+### T4:HD - Commits with SATD and issues with architectural affect a substantial number of LOC changes
+
+**Null Hypothesis (H0D)**: Don't these commits affect as many LOCs as those without SATD?
+
+**Alternative hypothesis (H1D)**: Do these commits affect more LOC than those without SATD?
+
+**Alternative hypothesis (H2D)**: Do these commits affect less LOC than those without SATD?
+
+![Boxplot Lines - LOC - changes in Commits in issues with AI with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_lines_chagnes_in_commits_issues_with_ai.png)
+
+![lines_changes_in_commits_issues with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/lines_changes_in_commits_issues_satd.png)
+
+## RQ5
+
+### T5:HE - Commits with SATD and issues with architectural affect a substantial modified files changes
+
+**Null Hypothesis (H0E):** Don't these commits modify as many files as those without SATD?
+
+**Alternative hypothesis (H1E):** Do these commits affect more files than those without SATD?
+
+**Alternative hypothesis (H2E):** Do these commits affect fewer files than those without SATD?
+
+![Boxplot Files chagnes in Commits in issues with AI with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_files_chages_in_commits_issues_with_ai_satd.png)
+
+![modified_files_in_commits_issues with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/modified_files_in_commits_issues_satd.png)
 
 More details in 
 
