@@ -121,3 +121,7 @@ Furthermore, the inspection of issues that appear in commits containing critical
 More details in 
 
 https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_comparison.ipynb
+
+# Comparing SATD in Repositories
+
+https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/comparing_satd_in_repositories.md
