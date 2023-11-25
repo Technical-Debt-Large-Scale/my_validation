@@ -110,6 +110,16 @@ The comparison of issues in commits with critical classes among Cassandra, Activ
 ![Boxplot Issues Time Resolution](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_timeresolution_issues.png)
 ![time_resolution_in_commits_issues](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/time_resolution_in_commits_issues.png)
 
+## RQ4
+
+![Boxplot Lines - LOC - changes in Commits in issues with AI and SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_lines_chagnes_in_commits_issues_with_ai_satd.png)
+![lines_changes_in_commits_issues with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/lines_changes_in_commits_issues_satd.png)
+
+## RQ5
+
+![Boxplot Files chagnes in Commits in issues with AI with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_files_chages_in_commits_issues_with_ai_satd.png)
+![modified_files_in_commits_issues with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/modified_files_in_commits_issues_satd.png)
+
 ## Hypothesis Tests
 
 [Hypothesis Tests](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_hypothesis_tests.md)
