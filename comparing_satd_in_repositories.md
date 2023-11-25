@@ -15,6 +15,10 @@ Comparing the following characteristics:
 
 Comparing Commits, Isues, Critical Classes and SATD
 
+![Diagram of Apache Cassandra Commits and SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/my_validation_analysis_commits_satd_cassandra.jpg)
+
+Scenarios of Boxplots of Apache Cassandra 
+
 ![Comparing Boxplots of Cassandra](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxsplots_satd_cassandra.png)
 
 More details in https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_analysis_cassandra.ipynb
