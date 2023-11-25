@@ -2,7 +2,7 @@
 
 Comparing the presence and impact of Self-admitted Technical Debt (SATD) across repositories like Cassandra, Kafka, ActiveMQ, and Hadoop can provide valuable insights into how SATD manifests and affects software development.
 
-Comparing the following characteristics: 
+To thoroughly investigate the impact of SATD on software development, we carefully selected the following characteristics for analysis: 
 - LOC changes in commits (SATD x No SATD)
 - Modified files in commits (SATD x No SATD)
 - LOC changes in commits with critical files (SATD x No SATD)
