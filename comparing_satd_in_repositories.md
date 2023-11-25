@@ -27,6 +27,10 @@ More details in https://github.com/Technical-Debt-Large-Scale/my_validation/blob
 
 Comparing Commits, Isues, Critical Classes and SATD
 
+![Diagram of Apache Kafka Commits and SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/my_validation_analysis_commits_satd_kafka.jpg)
+
+Scenarios of Boxplots of Apache Kafka 
+
 ![Comparing Boxplost of Kafka](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxsplots_satd_kafka.png)
 
 More details in https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_analysis_kafka.ipynb
@@ -35,6 +39,10 @@ More details in https://github.com/Technical-Debt-Large-Scale/my_validation/blob
 
 Comparing Commits, Isues, Critical Classes and SATD
 
+![Diagram of Apache ActiveMQ Commits and SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/my_validation_analysis_commits_satd_activemq.jpg)
+
+Scenarios of Boxplots of Apache ActiveMQ 
+
 ![Comparing Boxplost of ActiveMQ](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxsplots_satd_activemq.png)
 
 More details in https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_analysis_activemq.ipynb
@@ -42,6 +50,10 @@ More details in https://github.com/Technical-Debt-Large-Scale/my_validation/blob
 ## Boxplots of Apache Hadoop
 
 Comparing Commits, Isues, Critical Classes and SATD
+
+![Diagram of Apache Hadoop Commits and SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/my_validation_analysis_commits_satd_hadoop.jpg)
+
+Scenarios of Boxplots of Apache Hadoop 
 
 ![Comparing Boxplost of Hadoop](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxsplots_satd_hadoop.png)
 
