@@ -1,4 +1,4 @@
-# Comparing SATD in Repositories (Cassandra, Kafka, ActiveMQ and Hadoop)
+# Analyzing SATD in the investigated repositories (Cassandra, Kafka, ActiveMQ, and Hadoop)
 
 Comparing the presence and impact of Self-admitted Technical Debt (SATD) across repositories like Cassandra, Kafka, ActiveMQ, and Hadoop can provide valuable insights into how SATD manifests and affects software development.
 
