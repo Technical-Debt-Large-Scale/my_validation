@@ -122,6 +122,8 @@ More details in
 
 https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_comparison.ipynb
 
-# Comparing SATD in Repositories
+# Analyzing SATD in the investigated repositories
+
+We also conducted an analysis of SATD in the investigated repositories to examine the behavior of LOC changes in commits and modified files within commits.
 
 https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/comparing_satd_in_repositories.md
