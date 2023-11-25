@@ -8,6 +8,8 @@ We selected a representative dataset of Git repositories, encompassing significa
 
 We examine if these issues indicate architectural problems within the software. These problems encompass: software's structure, organizational issues, quality software, issues that impact evolvability and maintainability. For example: changes to core components,performance improvements, scalability snhancements, concurrency and parallelism, resource management, data model changes, distributed system aspects, consistency and availability, extensibility and plugin frameworks, security and compliance, system modularity, data integrity and durability, etc.
 
+We also examined the behavior of LOC changes and modified files in commits related to Self-admitted Technical Debt (SATD) found in comments from the diffs of each commit.
+
 Related to "architectural impact issues" found by issues in commits with critical classes in the selected software repositories: 
 
 RQ1) Do architectural impact issues affect a substantial number of LOC changes in commits?
@@ -15,6 +17,10 @@ RQ1) Do architectural impact issues affect a substantial number of LOC changes i
 RQ2) Do architectural impact issues affect a substantial amount of modified files in commits?
 
 RQ3) Do architectural impact issues require more time for resolution?
+
+RQ4) Do commits with SATD and issues with architectural impact affect a substantial number of LOC changes?
+
+RQ5) Do commits with SATD and issues with architectural impact affect a substantial modified files changes?
 
 ## Apache Cassandra analysis
 
@@ -89,16 +95,27 @@ More details and scripts available in https://github.com/Technical-Debt-Large-Sc
 
 The comparison of issues in commits with critical classes among Cassandra, ActiveMQ, Kafka and Hadoop
 
+## RQ1
+
 ![Boxplot Lines - LOC - changes in Commits in issues with AI](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_lines_chagnes_in_commits_issues_with_ai.png)
 ![lines_changes_in_commits_issues](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/lines_changes_in_commits_issues.png)
+
+## RQ2
+
 ![Boxplot Files chagnes in Commits in issues with AI](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_files_chages_in_commits_issues_with_ai.png)
 ![modified_files_in_commits_issues](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/modified_files_in_commits_issues.png)
+
+## RQ3
+
 ![Boxplot Issues Time Resolution](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_timeresolution_issues.png)
 ![time_resolution_in_commits_issues](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/time_resolution_in_commits_issues.png)
 
+## Hypothesis Tests
+
 [Hypothesis Tests](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/my_hypothesis_tests.md)
 
-**Conclusions**
+## Conclusions 
+
 Issues with architectural impact (labeled as "Yes") exhibit the following **characteristics**:
 - They affect a substantial number of files (T1:H0A rejected).
 - They involve significant code changes (T2:H0B rejected).
