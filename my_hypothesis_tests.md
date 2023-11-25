@@ -126,6 +126,16 @@ To test the hypothesis that issues with architectural impact require more time f
 
 **Alternative hypothesis (H2D)**: Do these commits affect less LOC than those without SATD?
 
+| T4:HD   		| Cassandra | ActiveMQ | Kafka	   | Hadoop	   |
+| --------------| --------- | -------- | --------- | --------- |
+| h0stats   	| 4071.0    | 582.0    | 3049.0    | 1104.0    | 
+| h0p-value 	| 2.427e-09 | 0.016719 | 0.0001283 | 2.582e-05 |
+| p-value   	| 1.213e-09 | 0.008359 | 6.417e-05 | 1.291e-05 |
+| effec-size	| 1.1888854 | 0.884572 | 0.8608436 | 1.3019999 |
+| H0D 		  	| Rejected  | Rejected | Rejected  | Rejected  |
+| H1D 		  	| Accepted  | Accepted | Accepted  | Accepted  |
+| H2D 		  	| Rejected  | Rejected | Rejected  | Rejected  |
+
 ![Boxplot Lines - LOC - changes in Commits in issues with AI with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_lines_chagnes_in_commits_issues_with_ai.png)
 
 ![lines_changes_in_commits_issues with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/lines_changes_in_commits_issues_satd.png)
@@ -139,6 +149,16 @@ To test the hypothesis that issues with architectural impact require more time f
 **Alternative hypothesis (H1E):** Do these commits affect more files than those without SATD?
 
 **Alternative hypothesis (H2E):** Do these commits affect fewer files than those without SATD?
+
+| T5:HE   	 | Cassandra | ActiveMQ | Kafka	    | Hadoop	|
+| ---------- | --------- | -------- | --------- | --------- |
+| h0stats    | 4032.0    | 596.5    | 2641.5    | 1037.5    |
+| h0p-value  | 3.169e-06 | 0.086074 | 0.0025881 | 0.0002208 |
+| p-value    | 1.584e-06 | 0.086074 | 0.0012940 | 0.0001104 |
+| effec-size | 0.9550442 | 0.552624 | 0.6963532 | 1.1450433 |
+| H0E 		 | Rejected  | Accepted | Rejected  | Rejected  |
+| H1E 		 | Accepted  | Rejected | Accepted  | Accepted  |
+| H2E 		 | Rejected  | Rejected | Rejected  | Rejected  |
 
 ![Boxplot Files chagnes in Commits in issues with AI with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_files_chages_in_commits_issues_with_ai_satd.png)
 
