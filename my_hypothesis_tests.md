@@ -66,11 +66,11 @@ To test the hypothesis that issues with architectural impact affect a substantia
 
 To test the hypothesis that issues with architectural impact affect a substantial number of files:
 
-**Null hypothesis (H0B)**: The number of files affected by issues with architectural impact is not significantly different from the number of files affected by issues with less architectural impact.
+**Null hypothesis (H0B)**: The number of files affected by issues with architectural impact is not significantly different from the number of files affected by issues without architectural impact.
 
-**Alternative hypothesis (H1B)**: The number of files affected by issues with architectural impact is significantly greater than the number of files affected by issues with less architectural impact.
+**Alternative hypothesis (H1B)**: The number of files affected by issues with architectural impact is significantly greater than the number of files affected by issues without architectural impact.
 
-**Alternative hypothesis (H2B)**: The number of files affected by issues with architectural impact is significantly lower than the number of files affected by issues with less architectural impact.
+**Alternative hypothesis (H2B)**: The number of files affected by issues with architectural impact is significantly lower than the number of files affected by issues without architectural impact.
 
 **Statistical test**: Mann-Whitney U test
 
