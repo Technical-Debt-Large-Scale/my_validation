@@ -107,7 +107,7 @@ More details and scripts available in https://github.com/Technical-Debt-Large-Sc
 
 # Results
 
-The comparison of issues in commits with critical classes among Cassandra, ActiveMQ, Kafka and Hadoop
+The comparison of **issues in commits with critical classes** among Cassandra, ActiveMQ, Kafka and Hadoop
 
 ## RQ1 - Do architectural impact issues affect a substantial number of LOC changes in commits?
 
