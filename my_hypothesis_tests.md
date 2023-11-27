@@ -94,11 +94,11 @@ To test the hypothesis that issues with architectural impact affect a substantia
 ### T3: HC - issues with architectural impact require more time for resolution
 To test the hypothesis that issues with architectural impact require more time for resolution:
 
-**Null hypothesis (H0C)**: The time to resolution for issues with architectural impact is not significantly different from the time to resolution for issues with less architectural impact.
+**Null hypothesis (H0C)**: The time to resolution for issues with architectural impact is not significantly different from the time to resolution for issues without architectural impact.
 
-**Alternative hypothesis (H1C)**: The time to resolution for issues with architectural impact is significantly greater than the time to resolution for issues with less architectural impact.
+**Alternative hypothesis (H1C)**: The time to resolution for issues with architectural impact is significantly greater than the time to resolution for issues without architectural impact.
 
-**Alternative hypothesis (H2C)**: The time to resolution for issues with architectural impact is significantly lower than the time to resolution for issues with less architectural impact.
+**Alternative hypothesis (H2C)**: The time to resolution for issues with architectural impact is significantly lower than the time to resolution for issues without architectural impact.
 
 **Statistical test**: Mann-Whitney U test
 
@@ -120,11 +120,11 @@ To test the hypothesis that issues with architectural impact require more time f
 
 ### T4:HD - Commits with SATD and issues with architectural affect a substantial number of LOC changes
 
-**Null Hypothesis (H0D)**: Don't these commits affect as many LOCs as those without SATD?
+**Null Hypothesis (H0D)**: Commits with critical classes with SATD do not affect as many lines of code (LOC) as those without SATD.
 
-**Alternative hypothesis (H1D)**: Do these commits affect more LOC than those without SATD?
+**Alternative Hypothesis (H1D)**: Commits with critical classes and SATD affect more LOC than those without SATD.
 
-**Alternative hypothesis (H2D)**: Do these commits affect less LOC than those without SATD?
+**Alternative Hypothesis (H2D**): Commits with critical classes and SATD affect fewer LOC than those without SATD.
 
 | T4:HD   		| Cassandra | ActiveMQ | Kafka	   | Hadoop	   |
 | --------------| --------- | -------- | --------- | --------- |
@@ -144,11 +144,11 @@ To test the hypothesis that issues with architectural impact require more time f
 
 ### T5:HE - Commits with SATD and issues with architectural affect a substantial modified files changes
 
-**Null Hypothesis (H0E):** Don't these commits modify as many files as those without SATD?
+**Null Hypothesis (H0E)**: Commits with critical classes and SATD do not modify as many files as those without SATD.
 
-**Alternative hypothesis (H1E):** Do these commits affect more files than those without SATD?
+**Alternative Hypothesis (H1E)**: Commits with critical classes and SATD affect more files than those without SATD.
 
-**Alternative hypothesis (H2E):** Do these commits affect fewer files than those without SATD?
+**Alternative Hypothesis (H2E)**: Commits with critical classes and SATD affect fewer files than those without SATD.
 
 | T5:HE   	 | Cassandra | ActiveMQ | Kafka	    | Hadoop	|
 | ---------- | --------- | -------- | --------- | --------- |
