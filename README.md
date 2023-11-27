@@ -22,7 +22,7 @@ We examine if these issues indicate architectural problems within the software. 
 
 We also examined the behavior of LOC changes and modified files in commits related to Self-admitted Technical Debt (SATD) found in comments from the diffs of each commit.
 
-Related to "architectural impact issues" found by issues in commits with critical classes in the selected software repositories: 
+Related to "architectural impact issues" found by **issues in commits with critical classes** in the selected software repositories: 
 
 RQ1) Do architectural impact issues affect a substantial number of LOC changes in commits?
 
