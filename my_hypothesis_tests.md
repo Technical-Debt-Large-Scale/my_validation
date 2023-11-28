@@ -7,11 +7,10 @@ The null hypothesis is the statement that the three characteristics listed are n
 
 The alternative hypothesis is the statement that the three characteristics are associated with issues with architectural impact.
 
-## 2. The statistical test (Chi-squared test, Mann-Whitney U test). 
+## 2. The statistical test (Mann-Whitney U test). 
 
 The choice of statistical test will depend on the specific characteristic you are testing. 
 For example: to test the hypothesis that issues with architectural impact issues with architectural impact require more time for resolution you can use a Mann-Whitney U test.
-The chi-squared test must be used to normalized data.
 
 ## 3. Collect data. 
 
