@@ -24,15 +24,15 @@ We also examined the behavior of LOC changes and modified files in commits relat
 
 Related to "architectural impact issues" found by **issues in commits with critical classes** in the selected software repositories: 
 
-RQ1) Do architectural impact issues affect a substantial number of LOC changes in commits?
+RQ1) Do architectural impact issues affect a substantial number of LOC changes in commits with critical classes?
 
-RQ2) Do architectural impact issues affect a substantial amount of modified files in commits?
+RQ2) Do architectural impact issues affect a substantial amount of modified files in commits with critical classes?
 
 RQ3) Do architectural impact issues require more time for resolution?
 
-RQ4) Do commits with SATD and issues with architectural impact affect a substantial number of LOC changes?
+RQ4) Do commits with critical classes and SATD and issues with architectural impact affect a substantial number of LOC changes?
 
-RQ5) Do commits with SATD and issues with architectural impact affect a substantial modified files changes?
+RQ5) Do commits with critical classes and SATD and issues with architectural impact affect a substantial modified files changes?
 
 ## Apache Cassandra analysis
 
@@ -109,7 +109,7 @@ More details and scripts available in https://github.com/Technical-Debt-Large-Sc
 
 The comparison of **issues in commits with critical classes** among Cassandra, ActiveMQ, Kafka and Hadoop
 
-## RQ1 - Do architectural impact issues affect a substantial number of LOC changes in commits?
+## RQ1 - Do architectural impact issues affect a substantial number of LOC changes in commits with critical classes?
 
 ![Boxplot Lines - LOC - changes in Commits in issues with AI](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_lines_changes_in_commits_issues_with_ai_color.png)
 
@@ -124,7 +124,7 @@ The comparison of **issues in commits with critical classes** among Cassandra, A
 
 ![lines_changes_in_commits_issues](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/lines_changes_in_commits_issues.png)
 
-## RQ2 - Do architectural impact issues affect a substantial amount of modified files in commits?
+## RQ2 - Do architectural impact issues affect a substantial amount of modified files in commits with critical classes?
 
 ![Boxplot Files chagnes in Commits in issues with AI](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_files_changes_in_commits_issues_with_ai_color.png)
 - c1 (Cassandra) - issues with Architectural Impact
@@ -152,7 +152,7 @@ The comparison of **issues in commits with critical classes** among Cassandra, A
   
 ![time_resolution_in_commits_issues](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/time_resolution_in_commits_issues.png)
 
-## RQ4 - Do commits with SATD and issues with architectural impact affect a substantial number of LOC changes?
+## RQ4 - Do commits with critical classes and SATD and issues with architectural impact affect a substantial number of LOC changes?
 
 ![Boxplot Lines - LOC - changes in Commits in issues with AI and SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_lines_changes_in_commits_issues_with_ai_satd_color.png)
 - c1 (Cassandra) - commits with SATD and issues with Architectural Impact
@@ -166,7 +166,7 @@ The comparison of **issues in commits with critical classes** among Cassandra, A
   
 ![lines_changes_in_commits_issues with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/lines_changes_in_commits_issues_satd.png)
 
-## RQ5 - Do commits with SATD and issues with architectural impact affect a substantial modified files changes?
+## RQ5 - Do commits with critical classes and SATD and issues with architectural impact affect a substantial modified files changes?
 
 ![Boxplot Files chagnes in Commits in issues with AI with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_files_chages_in_commits_issues_with_ai_satd.png)
 - c1 (Cassandra) - commits with SATD and issues with Architectural Impact
