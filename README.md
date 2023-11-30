@@ -2,11 +2,11 @@
 
 To validate the [ATDCodeAnalyzer](https://github.com/Technical-Debt-Large-Scale/atdcodeanalyzer), we executed the following steps:
 
-1. Development of an Inspection Labeling Process: We created a process to label inspections, facilitating the identification of issues with potential architectural impacts.
+1. **Development of an Inspection Labeling Process**: We created a process to label inspections, facilitating the identification of issues with potential architectural impacts.
 
-2. Analysis of Four Open-Source Repositories: Employing the ATDCodeAnalyzer, we extracted critical classes from each repository. We examined the behavior of LOC changes in commits, modified files, and time resolution within issues bearing Architectural Impact. Additionally, we explored the behavior of LOC changes and modified files in commits with critical classes affected by SATD and issues with Architectural Impact.
+2. **Analysis of Four Open-Source Repositories**: Employing the ATDCodeAnalyzer, we extracted critical classes from each repository. We examined the behavior of LOC changes in commits, modified files, and time resolution within issues bearing Architectural Impact. Additionally, we explored the behavior of LOC changes and modified files in commits with critical classes affected by SATD and issues with Architectural Impact.
 
-3. Analysis of SATD in Repository Commits: We thoroughly assessed SATD within the commits of each repository, scrutinizing the behavior of LOC changes, modified files, and issues associated with commits featuring critical classes.
+3. **Analysis of SATD in Repository Commits**: We thoroughly assessed SATD within the commits of each repository, scrutinizing the behavior of LOC changes, modified files, and issues associated with commits featuring critical classes.
 
 ![Validating the ATDCodeAnalyzer](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/Validating_the_ATDCodeAnalyzer.png)
 
