@@ -30,7 +30,7 @@ If the *p-value* is less than your chosen significance level, then you reject th
 
 # Results of Hypothesis Tests
 
-## RQ1) Do architectural impact issues affect a substantial number of LOC changes in commits?
+## RQ1) Do architectural impact issues affect a substantial number of LOC changes in commits with critical classes?
 
 ### T1: HA - issues with architectural impact affect a substantial number of LOC changes in commits.
 
@@ -67,7 +67,7 @@ To test the hypothesis that issues with architectural impact affect a substantia
 ![lines_changes_in_commits_issues](https://github.com/armandossrecife/my_validation3/blob/main/imagens/lines_changes_in_commits_issues.png)
 
 
-## RQ2) Do architectural impact issues affect a substantial amount of modified files in commits?
+## RQ2) Do architectural impact issues affect a substantial amount of modified files in commits with critical classes?
 
 ### T2: HB - issues with architectural impact affect a substantial number of files
 
@@ -139,7 +139,7 @@ To test the hypothesis that issues with architectural impact require more time f
 
 ![time_resolution_in_commits_issues](https://github.com/armandossrecife/my_validation3/blob/main/imagens/time_resolution_in_commits_issues.png)
 
-## RQ4) Do commits with SATD and issues with architectural impact affect a substantial number of LOC changes?
+## RQ4) Do commits with critical classes and SATD and issues with architectural impact affect a substantial number of LOC changes?
 
 ### T4:HD - Commits with SATD and issues with architectural affect a substantial number of LOC changes
 
@@ -171,7 +171,7 @@ To test the hypothesis that issues with architectural impact require more time f
 
 ![lines_changes_in_commits_issues with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/lines_changes_in_commits_issues_satd.png)
 
-## RQ5) Do commits with SATD and issues with architectural impact affect a substantial modified files changes?
+## RQ5) Do commits with critical classes and SATD and issues with architectural impact affect a substantial modified files changes?
 
 ### T5:HE - Commits with SATD and issues with architectural affect a substantial modified files changes
 
