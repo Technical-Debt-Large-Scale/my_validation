@@ -190,7 +190,7 @@ Issues with architectural impact (labeled as "Yes") in commits with critical cla
 - They involve significant code changes in commits (T2:H1B accepted).
 - They require more time for resolution (T3:H1C accepted).
 
-Commits with SATD and issues with architectural impact (labeled as "Yes") also have the following **characteristics**:  
+Commits with critical classes and SATD and issues with architectural impact (labeled as "Yes") also have the following **characteristics**:  
 - They affect a substantial number of files in commits (T4:H1D accepted).
 - They involve significant code changes in commits (T5:H1E accepted).
 
