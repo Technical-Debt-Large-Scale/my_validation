@@ -9,8 +9,8 @@ To thoroughly investigate the impact of SATD on software development, we careful
 - Modified files in commits with critical files (SATD x No SATD)
 - LOC changes in commits without critical files (SATD x No SATD)
 - Modified files in commits without critical files (SATD x No SATD)
-- LOC changes in issues in commits with critical files (SATD x No SATD)
-- Modified files issues in commits with critical files (SATD x No SATD)
+- **LOC changes in issues in commits with critical files (SATD x No SATD)**
+- **Modified files issues in commits with critical files (SATD x No SATD)**
 
 ## Analysis of SATD in Different Repositories
 
