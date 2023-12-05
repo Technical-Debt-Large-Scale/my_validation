@@ -38,11 +38,11 @@ Evaluating LOC changes in commits without critical files that have SATD versus t
 
 Comparison of the number of modified files in commits without critical files, distinguishing between those with SATD and those without SATD in each repository.
 
-7. LOC Changes in Issues in Commits with Critical Files
+**7. LOC Changes in Issues in Commits with Critical Files**
 
 Assessing the LOC changes in issues identified within commits involving critical files, comparing SATD-related issues with non-SATD issues in each repository.
 
-8. Modified Files in Issues in Commits with Critical Files
+**8. Modified Files in Issues in Commits with Critical Files**
 
 Analyzing the count of modified files associated with issues in commits involving critical files, distinguishing between SATD-related issues and non-SATD issues in each repository.
 
