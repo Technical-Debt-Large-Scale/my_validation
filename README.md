@@ -24,6 +24,8 @@ We also examined the behavior of LOC changes and modified files in commits relat
 
 Related to "architectural impact issues" found by **issues in commits with critical classes** in the selected software repositories: 
 
+RQ0) What is the proportion of issues classified as impacting architectural design, as observed in each analyzed software repository?
+
 RQ1) Do architectural impact issues affect a substantial number of LOC changes in commits with critical classes?
 
 RQ2) Do architectural impact issues affect a substantial amount of modified files in commits with critical classes?
@@ -108,6 +110,10 @@ More details and scripts available in https://github.com/Technical-Debt-Large-Sc
 # Results
 
 The comparison of **issues in commits with critical classes** among Cassandra, ActiveMQ, Kafka and Hadoop
+
+## RQ0 - What is the proportion of issues classified as impacting architectural design, as observed in each analyzed software repository?
+
+![% of architectural impact by Repository](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/architectural_impact_by_repo.png)
 
 ## RQ1 - Do architectural impact issues affect a substantial number of LOC changes in commits with critical classes?
 
