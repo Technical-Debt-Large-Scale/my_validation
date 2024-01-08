@@ -133,6 +133,7 @@ The comparison of **issues in commits with critical classes** among Cassandra, A
 ## RQ2 - Do architectural impact issues affect a substantial amount of modified files in commits with critical classes?
 
 ![Boxplot Files chagnes in Commits in issues with AI](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_files_changes_in_commits_issues_with_ai_color.png)
+
 - c1 (Cassandra) - issues with Architectural Impact
 - c2 (Cassandra) - issues without Architectural Impact
 - a1 (ActiveMQ) - issues with Architectural Impact
@@ -161,6 +162,7 @@ The comparison of **issues in commits with critical classes** among Cassandra, A
 ## RQ4 - Do commits with critical classes and SATD and issues with architectural impact affect a substantial number of LOC changes?
 
 ![Boxplot Lines - LOC - changes in Commits in issues with AI and SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_lines_changes_in_commits_issues_with_ai_satd_color.png)
+
 - c1 (Cassandra) - commits with SATD and issues with Architectural Impact
 - c2 (Cassandra) - commits without SATD and issues without Architectural Impact
 - a1 (ActiveMQ) - commits with SATD and issues with Architectural Impact
@@ -175,6 +177,7 @@ The comparison of **issues in commits with critical classes** among Cassandra, A
 ## RQ5 - Do commits with critical classes and SATD and issues with architectural impact affect a substantial modified files changes?
 
 ![Boxplot Files chagnes in Commits in issues with AI with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_files_chages_in_commits_issues_with_ai_satd.png)
+
 - c1 (Cassandra) - commits with SATD and issues with Architectural Impact
 - c2 (Cassandra) - commits without SATD and issues without Architectural Impact
 - a1 (ActiveMQ) - commits with SATD and issues with Architectural Impact
@@ -183,6 +186,7 @@ The comparison of **issues in commits with critical classes** among Cassandra, A
 - k2 (Kafka) - commits without SATD and issues without Architectural Impact
 - h1 (Hadoop) - commits with SATD and issues with Architectural Impact
 - h2 (Hadoop) - commits without SATD and issues without Architectural Impact
+  
 ![modified_files_in_commits_issues with SATD](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/modified_files_in_commits_issues_satd.png)
 
 ## Hypothesis Tests
