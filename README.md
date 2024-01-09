@@ -117,6 +117,8 @@ The comparison of **issues in commits with critical classes** among Cassandra, A
 
 ![Issues with architectural impact by Repository overtime](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/issues_with_ai_overtime.png)
 
+![Commits with Critical Classes overtime](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/commits_with_critical_classes_overtime.png)
+
 ## RQ1 - Do architectural impact issues affect a substantial number of LOC changes in commits with critical classes?
 
 ![Boxplot Lines - LOC - changes in Commits in issues with AI](https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/imagens/boxplot_lines_changes_in_commits_issues_with_ai_color.png)
