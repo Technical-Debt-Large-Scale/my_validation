@@ -62,9 +62,7 @@ sample_size = calculate_sample_size(confidence_level, margin_of_error, populatio
 norm.ppf(): normal continuous random variable
 
 7. Manual classification of issues to check architectural impact:
-You manually review and classify the selected 226 issues to assess their architectural impact. This could involve identifying whether the issue relates to architectural changes, refactoring, or other factors.
-
-The manual inspection process is detailed in this [link](https://docs.google.com/document/d/1umbEJMVsdxTzBVOr8VDRCscpwOK9-ePVJ-o862L5j08/edit?usp=sharing)
+You manually review and classify the selected 226 issues to assess their architectural impact. This could involve identifying whether the issue relates to architectural changes, refactoring, or other factors. The manual inspection process is detailed in this [link](https://docs.google.com/document/d/1umbEJMVsdxTzBVOr8VDRCscpwOK9-ePVJ-o862L5j08/edit?usp=sharing)
 
 9. Semi-automatic classification aided by ChatGPT with Prompt Engineering:
 In this step, you use ChatGPT to assist in the classification process. You might provide prompts to ChatGPT to help automate or semi-automate some of the classification tasks. More details in https://github.com/Technical-Debt-Large-Scale/my_validation/blob/main/inspection_process.md
