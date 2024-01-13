@@ -209,6 +209,8 @@ The comparison of **issues in commits with critical classes** among Cassandra, A
 
 ## Conclusions 
 
+Therefore, changes affecting critical classes in a software project tend to also involve issues that have a significant impact on the software's architecture. This means that fixing these issues might require not just patching a specific bug but also potentially restructuring or redesigning parts of the architecture.
+
 Issues with architectural impact (labeled as "Yes") in commits with critical classes exhibit the following **characteristics**:
 - They affect a substantial number of files in commits (T1:H1A accepted).
 - They involve significant code changes in commits (T2:H1B accepted).
