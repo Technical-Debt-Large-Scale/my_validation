@@ -36,6 +36,16 @@ RQ4) Do commits with critical classes and SATD and issues with architectural imp
 
 RQ5) Do commits with critical classes and SATD and issues with architectural impact affect a substantial modified files changes?
 
+**Understanding the Research Questions:**
+
+RQ0: This question focuses on the prevalence of architectural impact issues in each repository. You can calculate the percentage of issues classified as "Yes" for architectural impact for each repository to answer this question.
+
+RQ1-RQ2: These questions investigate the relationship between architectural impact issues and code changes. You can compare the LOC changes and number of modified files in commits with and without architectural impact issues to see if there is a statistically significant difference.
+
+RQ3: This question explores the time taken to resolve issues with architectural impact. You can compare the time taken to close issues classified as "Yes" for architectural impact with other issues to see if there is a significant difference.
+
+RQ4-RQ5: These questions focus on the combined effect of critical classes, SATD, and architectural impact issues on code changes. You can analyze the LOC changes and modified files in commits that meet all three criteria compared to commits that meet only one or two criteria to see if there is a cumulative effect.
+
 ## Apache Cassandra analysis
 
 Draft of Cassandra's commit and issue analysis method
