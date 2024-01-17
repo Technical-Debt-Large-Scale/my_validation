@@ -49,7 +49,7 @@ To test the hypothesis that issues with architectural impact affect a substantia
 | h0stats   | 7466.5    | 2568.0   | 5138.0    | 2144.5    | 
 | h0p-value | 0.00108   | 0.01891  | 0.000196  | 0.00145   | 
 | p-value   | 0.00053   | 0.00945  | 9.82e-05  | 0.00072   |
-| effec-size| 0.54716   | 0.54376  | 0.58016   | 0.83171   |
+| effec-size (Vargha and Delaney) | 0.64319 | 0.65254 | 0.67029 | 0.70379 |
 | H0A 		  | Rejected  | Rejected | Rejected  | Rejected  | 
 | H1A 		  | Accepted  | Accepted | Accepted  | Accepted  |
 | H2A 		  | Rejected  | Rejected | Rejected  | Rejected  |
@@ -86,7 +86,7 @@ To test the hypothesis that issues with architectural impact affect a substantia
 | h0stats   | 8299.5    | 2765.0   | 5367.5    | 1845.0    |
 | h0p-value | 0.00071   | 0.00507  | 0.00164   | 0.05692   |
 | p-value   | 0.00035   | 0.00253  | 0.00082   | 0.05692   |
-| effec-size| 0.56297   | 0.60501  | 0.5655    | 0.61094   |
+| effec-size (Vargha and Delaney) | 0.65105 | 0.68255 | 0.63747 | 0.59972 |
 | H0B 	    | Rejected  | Rejected | Rejected  | Accepted  |
 | H1B 	    | Accepted  | Accepted | Accepted  | Rejected  |
 | H2B 		  | Rejected  | Rejected | Rejected  | Rejected  |
@@ -122,7 +122,7 @@ To test the hypothesis that issues with architectural impact require more time f
 | h0stats   | 6252.5    | 1655.0   | 3583.5    | 2916.0    |
 | h0p-value | 0.000218  | 0.19534  | 0.02584   | 2.459e-09 |
 | p-value   | 0.000109  | 0.19534  | 0.01292   | 1.229e-09 |
-| effec-size| 0.64695   | 0.26989  | 0.47917   | 1.11671   |
+| effec-size (Vargha and Delaney) | 0.65774 | 0.52737 | 0.64298 | 0.80952 |
 | H0C 		  | Rejected  | Accepted | Rejected  | Rejected  |
 | H1C 		  | Accepted  | Rejected | Accepted  | Accepted  |
 | H2C 		  | Rejected  | Rejected | Rejected  | Rejected  |
@@ -154,7 +154,7 @@ To test the hypothesis that issues with architectural impact require more time f
 | h0stats   	| 4071.0    | 582.0    | 3049.0    | 1104.0    | 
 | h0p-value 	| 2.427e-09 | 0.016719 | 0.0001283 | 2.582e-05 |
 | p-value   	| 1.213e-09 | 0.008359 | 6.417e-05 | 1.291e-05 |
-| effec-size	| 1.1888854 | 0.884572 | 0.8608436 | 1.3019999 |
+| effec-size (Vargha and Delaney) | 0.80534 | 0.67187 | 0.70963 | 0.82514 |
 | H0D 		  	| Rejected  | Rejected | Rejected  | Rejected  |
 | H1D 		  	| Accepted  | Accepted | Accepted  | Accepted  |
 | H2D 		  	| Rejected  | Rejected | Rejected  | Rejected  |
@@ -186,7 +186,7 @@ To test the hypothesis that issues with architectural impact require more time f
 | h0stats    | 4032.0    | 596.5    | 2641.5    | 1037.5    |
 | h0p-value  | 3.169e-06 | 0.086074 | 0.0025881 | 0.0002208 |
 | p-value    | 1.584e-06 | 0.086074 | 0.0012940 | 0.0001104 |
-| effec-size | 0.9550442 | 0.552624 | 0.6963532 | 1.1450433 |
+| effec-size (Vargha and Delaney) | 0.73025 | 0.66435 | 0.69234 | 0.77690 |
 | H0E 		 | Rejected  | Accepted | Rejected  | Rejected  |
 | H1E 		 | Accepted  | Rejected | Accepted  | Accepted  |
 | H2E 		 | Rejected  | Rejected | Rejected  | Rejected  |
