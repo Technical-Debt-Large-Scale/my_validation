@@ -1,3 +1,372 @@
+# Replication Package
+
+## Mining Architectural Technical Debt through LLM-Assisted Issue Inspection: An Empirical Study with Apache Projects
+
+This repository contains the replication package accompanying the paper:
+> **Mining Architectural Technical Debt through LLM-Assisted Issue Inspection: An Empirical Study with Apache Projects**
+accepted to the **SBES 2026 Research Track (CBSoft 2026)**.
+The goal of this replication package is to provide all datasets, scripts, notebooks, intermediate artifacts, inspection protocols, and experimental results required to reproduce the empirical study described in the paper.
+The package follows the principles of **transparency**, **traceability**, and **reproducibility**, allowing researchers to inspect every step of the experimental pipeline—from repository mining to the final architectural-impact labels.
+
+# Study Overview
+The study investigates whether **issues linked to commits touching Architectural Technical Debt (ATD) critical classes** exhibit architectural impact.
+The empirical workflow combines:
+- repository mining;
+- commit analysis;
+- issue-tracker mining;
+- Architectural Technical Debt detection;
+- SATD extraction;
+- manual inspection;
+- LLM-assisted inspection;
+- statistical analysis.
+  
+The study evaluates four mature Apache Java projects:
+
+| Project | Repository |
+|----------|------------|
+| Apache Cassandra | Distributed NoSQL Database |
+| Apache Kafka | Event Streaming Platform |
+| Apache ActiveMQ | Message Broker |
+| Apache Hadoop | Distributed Computing Framework |
+
+
+# Experimental Workflow
+
+The complete experimental pipeline consists of eleven stages.
+
+```
+Repository Mining
+        │
+        ▼
+Critical Class Detection (using ATDCodeAnalyzer)
+        │
+        ▼
+Commit Extraction
+        │
+        ▼
+Issue Extraction
+        │
+        ▼
+Commit-Issue Linkage
+        │
+        ▼
+SATD Extraction
+        │
+        ▼
+Random Issue Sampling
+        │
+        ▼
+Manual Inspection
+        │
+        ▼
+LLM-assisted Inspection
+        │
+        ▼
+Agreement Analysis
+        │
+        ▼
+Cross-project Evaluation
+```
+
+# Repository Contents
+
+## 1. Project Datasets
+
+The repository contains the datasets extracted from the four Apache projects analyzed in this study.
+
+| Project | Description |
+|----------|-------------|
+| `cassandra/` | Apache Cassandra dataset |
+| `activemq/` | Apache ActiveMQ dataset |
+| `hadoop/` | Apache Hadoop dataset |
+| `kafka/` | Apache Kafka dataset |
+
+These datasets contain the commits, issues, metrics, and intermediate artifacts generated during the mining process.
+
+## 2. Random Sampling of Cassandra Issues
+
+Notebook:
+```
+select_issues_to_review.ipynb
+```
+Purpose:
+Randomly selects a statistically representative sample of Cassandra issues for manual inspection.
+The selected issues were manually analyzed by **three software engineers** familiar with the investigated systems.
+
+Output:
+```
+cassandra_issues_inspected_merged.xlsx
+```
+
+Main fields:
+| Field | Description |
+|--------|-------------|
+| issue_key | Apache JIRA issue identifier |
+| summary | Issue summary |
+| architectural_impact_manual | Manual label (oracle) |
+| architectural_impact | LLM-assisted label |
+
+## 3. Cassandra Critical Java Files and Issue-Related Metrics
+Document:
+```
+ccim.md
+```
+
+Purpose:
+Describes the relationship between Cassandra critical Java files and issue-related metrics.
+Metrics include:
+- AIC
+- AICWI
+- AII
+- AIB
+- AIII
+- AINFI
+These metrics characterize the maintenance activity associated with critical classes.
+
+## 4. SATD Analysis
+
+Document:
+```
+comparing_satd_in_repositories.md
+```
+Purpose:
+Analyzes Self-Admitted Technical Debt (SATD) across the four investigated repositories.
+The analysis extracts SATD signals from:
+- commit messages;
+- issue summaries;
+- issue descriptions;
+- issue comments.
+SATD evidence is treated as a complementary source for understanding architectural problems.
+
+## 5. Manual vs LLM-assisted Inspection
+
+Notebook:
+```
+evaluate_inspection_model.ipynb
+```
+
+Purpose:
+Evaluates the agreement between:
+- manual inspection performed by three software engineers;
+- LLM-assisted inspection using ChatGPT 3.5.
+
+The notebook computes:
+- Cohen's Kappa;
+- Precision;
+- Recall;
+- Accuracy;
+- F1-score.
+
+Manual inspection is considered the reference oracle.
+
+## 6. Repository Information Extraction
+Notebook:
+```
+extract_info_from_repositories.ipynb
+```
+Purpose:
+Extracts general information from the investigated repositories.
+Collected information includes:
+- number of files;
+- Java files;
+- LOC;
+- comments;
+- commits;
+- releases;
+- contributors;
+- repository age.
+These metrics are used to characterize the empirical dataset.
+
+## 7. LLM-assisted Inspection Protocol
+Document:
+```
+inspection_process.md
+```
+Purpose:
+Documents the semi-automatic inspection protocol used throughout the study.
+The protocol includes:
+- issue preprocessing;
+- prompt preparation;
+- ChatGPT execution;
+- label extraction;
+- justification recording.
+The protocol follows a human-in-the-loop strategy.
+
+## 8. Integrated Mining Dataset
+Document:
+```
+issues_commits_critical_classes_satd.md
+```
+
+Purpose:
+
+Describes how commits, issues, critical classes, and SATD signals are integrated into a unified dataset.
+The resulting dataset preserves traceability among all analyzed software artifacts.
+
+## 9. Repository Analyses
+
+Each investigated repository has an independent analysis notebook.
+| Notebook | Purpose |
+|-----------|----------|
+| my_analysis_cassandra.ipynb | Cassandra analysis |
+| my_analysis_activemq.ipynb | ActiveMQ analysis |
+| my_analysis_hadoop.ipynb | Hadoop analysis |
+| my_analysis_kafka.ipynb | Kafka analysis |
+Each notebook produces:
+- descriptive statistics;
+- architectural-impact distributions;
+- repository-specific visualizations;
+- intermediate tables.
+
+## 10. Cross-project Comparison
+Notebook:
+```
+my_comparison2.ipynb
+```
+Purpose:
+Compares all investigated repositories.
+The notebook analyzes:
+- commits;
+- linked issues;
+- critical classes;
+- architectural-impact issues;
+- repository evolution.
+It generates the cross-project comparisons reported in the paper.
+
+## 11. Statistical Analysis
+Document:
+```
+my_hypothesis_tests.md
+```
+Purpose:
+Documents the statistical analyses performed in the study.
+Includes:
+- hypothesis formulation;
+- statistical tests;
+- interpretation of results.
+
+# Software Requirements
+The experiments were developed using:
+- Python 3.11+
+- Jupyter Notebook
+- Git
+Recommended operating systems:
+- Linux
+- macOS
+
+# Python Dependencies
+Main libraries:
+```
+pandas
+numpy
+matplotlib
+scipy
+scikit-learn
+openpyxl
+requests
+networkx
+tqdm
+```
+Install all dependencies using:
+```bash
+pip install -r requirements.txt
+```
+
+# Reproducing the Study
+The recommended execution order is:
+1. Extract repository information
+```
+extract_info_from_repositories.ipynb
+```
+↓
+2. Analyze each repository
+```
+my_analysis_cassandra.ipynb
+my_analysis_activemq.ipynb
+my_analysis_hadoop.ipynb
+my_analysis_kafka.ipynb
+```
+↓
+3. Compare repositories
+```
+my_comparison2.ipynb
+```
+↓
+4. Select issues for manual inspection
+```
+select_issues_to_review.ipynb
+```
+↓
+5. Execute the LLM-assisted inspection protocol
+```
+inspection_process.md
+```
+↓
+6. Evaluate manual × LLM agreement
+```
+evaluate_inspection_model.ipynb
+```
+↓
+7. Generate tables and figures
+Outputs are written to the `results/` and `figures/` directories.
+
+# Large Language Model
+The study uses:
+**Model**
+- ChatGPT 3.5
+**Inspection Strategy**
+- Structured prompting
+- Few-shot examples
+- Binary classification
+- Textual justification
+  
+The LLM is **not** considered the empirical oracle.
+Instead, it acts as a scalable inspection assistant whose labels are validated against manual inspection.
+
+# Reproducibility
+The replication package provides:
+- datasets;
+- notebooks;
+- scripts;
+- prompts;
+- manual labels;
+- LLM labels;
+- generated results.
+These artifacts enable independent researchers to reproduce every step of the empirical workflow.
+
+# Reproducibility Limitations
+Some factors may prevent exact reproduction of the reported results.
+
+## LLM Evolution
+
+ChatGPT is continuously updated by OpenAI.
+Future executions may produce different labels even when identical prompts are used.
+
+## Repository Evolution
+
+The Apache repositories continue to evolve.
+New commits, issues, and releases may produce different mining results.
+
+## Manual Inspection
+
+The manual labels were produced by three software engineers and are considered the empirical oracle for the Cassandra dataset.
+Different experts may occasionally disagree on borderline architectural-impact cases.
+
+## External Services
+
+The LLM-assisted inspection originally relied on the ChatGPT web interface.
+Exact decoding parameters were not configurable and may differ from future executions.
+
+# Citation
+If you use this replication package, please cite the corresponding SBES 2026 paper.
+
+# Contact
+**Armando Soares Sousa**
+Federal University of Piauí (UFPI)
+Computer Science Department
+Teresina, Brazil
+Email: armando@ufpi.edu.br
+
 # Validating the ATDCodeAnalyzer method
 
 To validate the [ATDCodeAnalyzer](https://anonymous.4open.science/r/atdcodeanalyzer-F057), we executed the following steps:
