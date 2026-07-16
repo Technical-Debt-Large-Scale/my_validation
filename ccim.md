@@ -74,6 +74,6 @@ For example:
 
 These results indicate that critical files are strongly involved in Cassandra's maintenance and evolution activities. Because these classes implement central responsibilities related to storage, configuration, messaging, compaction, and node management, their frequent association with issues makes them important candidates for architectural inspection and technical-debt analysis.
 
-## Suggested Table Note for the Paper
+## Summary
 
-> **Note:** AIC denotes appearances of a critical file in commits; AICWI denotes appearances in commits explicitly linked to JIRA issues; AII denotes total appearances in issues across all issue types; AIB, AIII, and AINFI denote appearances in Bug, Improvement, and New Feature issues, respectively. The difference between AII and the sum of AIB, AIII, and AINFI corresponds to other JIRA issue types, such as Task, Sub-task, Test, Wish, and Question.
+> AIC denotes appearances of a critical file in commits; AICWI denotes appearances in commits explicitly linked to JIRA issues; AII denotes total appearances in issues across all issue types; AIB, AIII, and AINFI denote appearances in Bug, Improvement, and New Feature issues, respectively. The difference between AII and the sum of AIB, AIII, and AINFI corresponds to other JIRA issue types, such as Task, Sub-task, Test, Wish, and Question.
